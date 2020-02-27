@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 3</title>
+</head>
+<body>
+<script>
+    let str = prompt("nhập kí tự vào");
+    let up = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    let low = "abcdefghijklmnopqrstuvwxyz";
+    let result = [];
+    for (let x = 0; x < str.length; x++){
+        if (up.indexOf(str[x]) !== -1){
+            result.push(str[x].toLowerCase());
+        }else if (low.indexOf(str[x]) !== -1){
+            result.push(str[x].toUpperCase());
+        }else {
+            result.push(str[x]);
+        }
+    }
+    document.write(result.join(''));
+</script>
+</body>
+</html>
